@@ -1,0 +1,193 @@
+.banner{
+  height: 480px;
+  background: url("https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg") center center;
+  background-size: cover;
+  .bannerText{
+    color: #fff;
+    height: 100%;
+    h2{
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-bottom: 8px;
+    }
+    p{
+      font-size: 1.25rem;
+      font-weight: bolder;
+    }
+  }
+  .links{
+    a{
+      padding: 10px 48px;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .banner{
+    .links{
+      display: flex;
+      a{
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width:576px){
+  .banner{
+    .links{
+      flex-direction: column;
+      a{
+        width: 100%;
+        // margin: 0;
+      }
+    }
+  }
+}
+
+.nav-scroller {
+  height: 2.75rem; /* 隱藏下方捲軸 */
+  overflow-y: hidden; 
+  border-bottom: 1px solid #707070;
+  border-top: 1px solid #707070;
+}
+.nav-scroller .nav {
+  padding-top: .5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem; /* 隱藏下方捲軸 */
+  overflow-x: auto;
+  white-space: nowrap;
+  :hover{
+    border-bottom: 1px #E31277 solid;
+  }
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.showList{
+  li{
+    display: flex;
+    background-color: #EFEFEF;
+    margin-bottom: 20px;
+  }
+  .card{
+    flex-direction: row;
+    img{
+      padding: 0;
+    }
+    h3{
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    p{
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+    .card-body{
+      padding: 40px 24px;
+    }
+    .links{
+      margin-top: 60px;
+    }
+  }
+}
+
+
+.showDate{
+  font-size: 1.25rem;
+  line-height: 29px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.showList .card .hide-lg{
+  font-size: 1rem;
+}
+.hide-lg{
+  display: none;
+}
+@media (max-width:992px){
+  .showtext{
+    .hide-lg{
+      display: flex;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+  .showDate{
+    display: none !important;
+  }
+  .showList .card .card-body {
+    padding: 15px 8px;
+  }
+}
+
+
+
+
+.bacImg{
+  background: url("https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/people2.png") center center;
+}
+
+
+.infoBox{
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #190014CC;
+  h3{
+    font-size: 1.75rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+  img{
+    width: 128px;
+    margin-bottom: 0.75rem;
+  }
+  h4{
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  p{
+    font-size: 1.25rem;
+    padding-right: 5px;
+    margin-bottom: 1rem;
+    line-height: 24px;
+  }
+  a{
+    color: #fff;
+    padding: 10px 38px;
+  }
+}
+
+.youMaybeLike{
+  img{
+    height: 350px;
+    margin-bottom: 4px;
+  }
+  h3{
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  p{
+    font-size: 1.25rem;
+  }
+}

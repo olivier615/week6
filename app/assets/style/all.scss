@@ -1,0 +1,17 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "reset";
+@import "base";
+
+@import "./layout/layout";
+@import './layout/index.scss';
+@import "./layout/design";
+@import "./layout/design-Info";
+@import "./layout/orderConfirm";
+@import "./layout/orderInfo";
+@import "./layout/orderPayment";
+@import "./layout/orderComplete";
+
