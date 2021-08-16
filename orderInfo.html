@@ -1,10 +1,151 @@
----
-title: OrderInfo
-layout: ./app/layout.ejs
-engine: ejs
-current: orderInfo
----
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    OrderInfo
+  </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header container-fluid">
+    <div class="container  d-flex justify-content-center align-items-center">
+      <a href="./index.html">
+        <h1 class="text-secondary">EXHIBINECTION</h1>
+      </a>
+      <div class="logBlock d-flex translate-middle">
+        <a class="signIn" href="">Sign in</a>
+        <a class="signUp" href="">Sign up</a>
+        <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="" class="cartBtn">
+          <span class="material-icons ms-md-4">
+            confirmation_number
+          </span>
+          <div class="itemNumber bg-primary">3</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="headerCart modal right fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Cart List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pb-5">
+          <div class="card mb-3">
+            <div class="g-0 d-flex py-4 ps-4 position-relative">
+              <span class="material-icons position-absolute top-0 start-0"">
+                close
+              </span>
+              <img
+                src="
+                https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+                class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex justify-content-between">
+                  <div class="cardLeftd-flex flex-column justify-content-between">
+                    <div class="cardLeftTop">
+                      <h5 class="card-title">2020 台味設計展</h5>
+                      <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                      <p>全票</p>
+                    </div>
+                    <p class="card-text mt-4 price">$350</p>
+                  </div>
+                  <div class="ticketNum d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <span class="material-icons">
+                      remove
+                    </span>
+                    <p>01</p>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="g-0 d-flex py-4 ps-4 position-relative">
+              <span class="material-icons position-absolute top-0 start-0"">
+                close
+              </span>
+              <img
+                src="
+                https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+                class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex justify-content-between">
+                  <div class="cardLeftd-flex flex-column justify-content-between">
+                    <div class="cardLeftTop">
+                      <h5 class="card-title">2020 台味設計展</h5>
+                      <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                      <p>全票</p>
+                    </div>
+                    <p class="card-text mt-4 price">$350</p>
+                  </div>
+                  <div class="ticketNum d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <span class="material-icons">
+                      remove
+                    </span>
+                    <p>01</p>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="g-0 d-flex py-4 ps-4 position-relative">
+              <span class="material-icons position-absolute top-0 start-0"">
+                close
+              </span>
+              <img
+                src="
+                https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+                class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex justify-content-between">
+                  <div class="cardLeftd-flex flex-column justify-content-between">
+                    <div class="cardLeftTop">
+                      <h5 class="card-title">2020 台味設計展</h5>
+                      <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                      <p>全票</p>
+                    </div>
+                    <p class="card-text mt-4 price">$350</p>
+                  </div>
+                  <div class="ticketNum d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <span class="material-icons">
+                      remove
+                    </span>
+                    <p>01</p>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex position-fixed bottom-0 end-0 justify-content-between">
+          <div class="total d-flex">
+            <p class="me-2">小計</p>
+            <p>NT$1050</p>
+          </div>
+          <button type="" class="btn btn-primary" onclick="location.href='./orderConfirm.html'">前往結帳</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
     <div class="row">
         <div class="col-12 col-md-8">
             <div class="row timeline-section">
@@ -163,3 +304,36 @@ current: orderInfo
         </div>
     </div>
 </div>
+
+    <footer class="footer">
+      <div class="footerBody d-flex align-items-end">
+        <div class="container">
+          <h3>想收到展覽的最新消息嗎？<br>快訂閱我們！</h3>
+          <div class="row">
+            <div class=" col-md-8 col-lg-4  ">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="webInfo container d-flex justify-content-between py-sm-4 py-3">
+        <div class="webInfoRights d-flex align-items-center">
+          <p class="webInfoTitle">EXHIBINECTION</p>
+          <p class="webInfotext ms-sm-3">© 2020. All Rights Reserved.</p>
+        </div>
+        <div class="logBlock">
+          <a href="">Sign in</a>
+          <a href="" class="ms-4">Sign up</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
